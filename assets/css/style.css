@@ -1,0 +1,275 @@
+/* Lettertype */
+@font-face {
+    font-family: 'LEMONMILK';
+    src: url('../fonts/LEMONMILK-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Kleuren */
+:root {
+    --achtergrond: #e8e5cd;
+    --primair: #9fb0a0;
+    --secundair: #245c5a;
+    --tekst: #000000;
+}
+
+/* Basis */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'LEMONMILK', sans-serif;
+    background-color: var(--achtergrond);
+    color: var(--tekst);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: relative;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: var(--primair);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0.5rem 0;
+}
+
+.knop {
+    color: white;
+    background-color: var(--secundair);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 25px;
+}
+
+/* Content */
+main {
+    flex: 1;
+    padding: 1rem 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Katten */
+.grijze-kat {
+    position: relative;
+    margin-top: 4rem;
+    overflow-x: clip;
+}
+
+.grijze-kat img {
+    position: absolute;
+    top: -65px;
+    right: -65px;
+    object-fit: cover;
+}
+
+article {
+    background-color: var(--primair);
+    border-radius: 15px;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.pootafdrukken {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.ginger-kat {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.ginger-kat img {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+}
+
+.grote-knop {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    color: white;
+    background-color: var(--secundair);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    margin-top: auto;
+    position: relative;
+}
+
+footer img {
+    width: 100%;
+    display: block;
+}
+
+/* Contact */
+.kaart {
+    margin-bottom: 1rem;
+    border: 10px solid var(--primair);
+    background-color: var(--primair);
+}
+
+.kaart img {
+    width: 100%;
+    display: block;
+}
+
+.openingstijden {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-x: clip;
+}
+
+.openingstijden h3 {
+    width: fit-content;
+    background-color: var(--primair);
+    padding: 0.2rem 0.5rem;
+    border-radius: 25px;
+}
+
+.openingstijden p {
+    width: fit-content;
+    background-color: var(--primair);
+    padding: 0.2rem 0.5rem;
+    border-radius: 25px;
+}
+
+.kat-openingstijden {
+    position: absolute;
+    top: 0;
+    right: -5rem;
+    height: 100%;
+}
+
+.donatie-box {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background-color: var(--primair);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.donatie-box p {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.contact-header {
+    margin: 1.5rem 0;
+    padding: 0.8rem 0.5rem;
+    background-color: var(--primair);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.contact-info {
+    margin: 2rem 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    color: var(--tekst);
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.contact-item:hover {
+    transform: scale(1.05);
+}
+
+.contact-item img {
+    width: 50px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.contact-item p {
+    font-size: 1rem;
+}
+
+/* Kattenhuis */
+.kattenhuis-katje {
+    position: absolute;
+    height: auto;
+}
+
+.kattenhuis-katje:hover p {
+    display: block;
+}
+
+.katje-1 {
+    top: 10px;
+    left: 100px;
+    width: 130px;
+}
+
+.katje-2 {
+    top: 260px;
+    left: 95px;
+    width: 120px;
+}
+
+.katje-3 {
+    top: 210px;
+    left: 210px;
+    width: 120px;
+}
+
+.kattenhuis-katje p {
+    display: none;
+    width: fit-content;
+    background-color: var(--primair);
+    padding: 0.2rem 0.5rem;
+    border-radius: 25px;
+}
